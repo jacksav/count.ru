@@ -3,116 +3,232 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Купить домен travel.fm</title>
+    <title>count.ru - Ваш Премиальный Домен для Аналитики и Учёта!</title>
+    <!-- Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
     <style>
-        /* Стили для базового оформления страницы */
+        /* Общие стили для страницы */
         body { 
-            font-family: Arial, sans-serif; 
+            font-family: 'Open Sans', Arial, sans-serif; /* Современный, читабельный шрифт */
             text-align: center; 
-            padding: 50px; 
-            background-color: #f4f4f4; 
-            color: #333; 
-            line-height: 1.6;
+            padding: 40px 20px; 
+            background-color: #f8f9fa; /* Светло-серый фон */
+            color: #343a40; /* Темный текст для контраста */
+            line-height: 1.7;
             margin: 0;
+            -webkit-font-smoothing: antialiased; /* Сглаживание текста */
+            -moz-osx-font-smoothing: grayscale;
         }
         .container { 
             margin: 20px auto; 
-            max-width: 700px; 
-            background-color: #fff; 
-            padding: 30px; 
-            border-radius: 10px; 
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+            max-width: 800px; /* Широкий контейнер */
+            background-color: #ffffff; 
+            padding: 50px; /* Больше отступов */
+            border-radius: 15px; /* Мягкие скругленные углы */
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* Выраженная тень */
+            border: 1px solid #e9ecef; /* Светлая рамка */
         }
-        h1 { 
-            color: #007bff; 
-            margin-bottom: 25px; 
-            font-size: 2.2em;
+
+        /* Крупное отображение доменного имени вверху */
+        .top-domain-display {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 5em; /* Очень крупный размер шрифта */
+            font-weight: 800; /* Очень жирный */
+            color: #dc3545; /* Выделяющий красный акцент */
+            line-height: 1;
+            margin-bottom: 30px; /* Увеличил отступ после домена */
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* Сильная тень для глубины */
         }
+
+        /* Стили для параграфов и списков */
         p { 
-            margin-bottom: 15px; 
+            margin-bottom: 20px; 
+            font-size: 1.1em;
+            color: #495057;
         }
         ul { 
             list-style-type: none; 
             padding: 0; 
-            margin-bottom: 20px; 
-            font-size: 1.1em;
+            margin-bottom: 35px; 
+            font-size: 1.15em;
+            color: #555;
+            text-align: left; /* Выравнивание элементов списка по левому краю */
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
         }
         li { 
-            margin-bottom: 8px; 
-            font-weight: bold; 
-            color: #555; 
+            margin-bottom: 12px; 
+            font-weight: 500; 
+            color: #343a40; 
+            position: relative;
+            padding-left: 25px; /* Место для маркера */
+        }
+        li::before { /* Пользовательский маркер */
+            content: '✓';
+            color: #28a745; /* Зеленая галочка */
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        strong { font-weight: bold; color: #343a40; }
+
+        /* Стили для блока цены */
+        .price-box {
+            background-color: #e6f7ff; /* Светло-голубой фон */
+            border: 2px solid #007bff; /* Синяя рамка */
+            border-radius: 10px;
+            padding: 30px;
+            margin: 40px auto;
+            max-width: 500px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .price-box h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: #007bff;
+            font-size: 1.8em;
+            margin-bottom: 18px;
+            font-weight: 600;
+        }
+        .buy-now-price {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3.2em; /* Крупная цена */
+            font-weight: bold;
+            color: #28a745; /* Зеленый цвет успеха */
+            margin-bottom: 15px;
+            display: block;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* Легкая тень текста */
+        }
+        .price-note {
+            font-size: 1em;
+            color: #6c757d;
+            margin-top: 15px;
         }
 
         /* Стили для формы */
         form { 
             text-align: left; 
-            margin-top: 40px; 
-            padding-top: 30px; 
-            border-top: 1px solid #eee; 
+            margin-top: 50px; 
+            padding-top: 35px; 
+            border-top: 1px solid #e9ecef; /* Светлая рамка для отделения формы */
         }
         label { 
             display: block; 
-            margin-bottom: 10px; 
-            font-weight: bold; 
-            color: #444; 
+            margin-bottom: 12px; 
+            font-weight: 600; 
+            color: #495057; 
+            font-size: 1em;
         }
         input[type="text"],
         input[type="email"],
         textarea {
-            width: calc(100% - 22px); /* Учитываем padding и border */
-            padding: 12px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            font-size: 1em;
-            box-sizing: border-box; /* Важно для корректной ширины */
+            width: calc(100% - 28px); /* Корректировка с учетом padding и border */
+            padding: 14px;
+            margin-bottom: 25px;
+            border: 1px solid #ced4da; /* Светло-серая рамка */
+            border-radius: 8px; /* Чуть более скругленные поля ввода */
+            font-size: 1.05em;
+            box-sizing: border-box; 
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        textarea:focus {
+            border-color: #007bff; /* Подсветка при фокусе */
+            box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+            outline: none;
         }
         textarea { 
             resize: vertical; 
-            min-height: 120px; 
+            min-height: 140px; /* Более высокая текстовая область */
         }
         button {
-            background-color: #28a745; /* Зеленая кнопка */
+            background-color: #007bff; /* Основной синий для кнопки */
             color: white;
-            padding: 14px 25px;
+            padding: 15px 30px;
             border: none;
-            border-radius: 6px;
+            border-radius: 8px;
             cursor: pointer;
-            font-size: 1.1em;
-            transition: background-color 0.3s ease;
+            font-size: 1.15em;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 10px rgba(0,123,255,0.2);
         }
         button:hover { 
-            background-color: #218838; 
+            background-color: #0056b3; 
+            transform: translateY(-2px); /* Легкий подъем при наведении */
+        }
+        button:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 5px rgba(0,123,255,0.2);
+        }
+
+        /* Адаптивные настройки */
+        @media (max-width: 768px) {
+            body { padding: 25px 15px; }
+            .container { padding: 30px; margin: 15px auto; }
+            .top-domain-display { font-size: 3.5em; }
+            .buy-now-price { font-size: 2.5em; }
+            p { font-size: 1em; }
+            ul { font-size: 1em; }
+            li { padding-left: 20px; }
+            li::before { left: -5px; }
+            input[type="text"], input[type="email"], textarea { width: calc(100% - 20px); padding: 10px; }
+            button { padding: 12px 20px; font-size: 1em; }
+        }
+        @media (max-width: 480px) {
+            .top-domain-display { font-size: 2.5em; }
+            .buy-now-price { font-size: 2em; }
+            .container { padding: 20px; }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Домен <span style="color: #dc3545;">"travel.fm"</span> доступен для покупки!</h1>
-        <p>Приветствуем! Мы предлагаем к продаже эксклюзивный домен для проектов в сфере путешествий, туризма, радио или подкастов:</p>
+        <div class="top-domain-display">count.ru</div>
+        <!-- Строчка с теглайном удалена -->
+
+        <div class="price-box">
+            <h2>Этот премиальный домен доступен для немедленного приобретения!</h2>
+            <span class="buy-now-price">US $45,000</span>
+            <p class="price-note">Закрепите за собой <span class="domain-highlight">count.ru</span> сейчас и получите мощный инструмент для развития вашего бизнеса в сфере аналитики и учёта на российском рынке. Серьёзные предложения приветствуются.</p>
+        </div>
+
+        <p>Откройте для себя безграничные возможности с <strong>count.ru</strong> – коротким, запоминающимся и чрезвычайно мощным доменным именем! Оно идеально подходит для любого проекта, цель которого – <strong>эффективный подсчёт, анализ данных, статистический учёт или финансовые операции</strong> на русскомворящем рынке. Универсальное значение слова "count" (счёт, подсчёт, учитывание) делает его бесценным для прямого воздействия на целевую аудиторию.</p>
+        
+        <p>Представьте потенциал для вашего бренда:</p>
         <ul>
-            <li>**travel.fm** - короткое, запоминающееся и привлекательное имя для вашего следующего проекта!</li>
-            <!-- Если у вас есть другие домены на продажу, добавьте их здесь: -->
-            <!-- <li>ваш_другой_домен.com</li> -->
+            <li><strong>Идеален для аналитических сервисов:</strong> Создайте платформу для веб-аналитики, статистики или отчётности.</li>
+            <li><strong>Бухгалтерские и финансовые решения:</strong> Премиальное имя для программного обеспечения или услуг в сфере учёта.</li>
+            <li><strong>IT-проекты и SaaS-сервисы:</strong> Подходит для любых платформ, где требуется подсчёт, отслеживание или агрегация данных.</li>
+            <li><strong>Маркетинговые и рекламные агентства:</strong> Используйте для измерения эффективности кампаний и метрик.</li>
+            <li><strong>Превосходно для брендинга:</strong> Короткое, звучное и мгновенно узнаваемое, что сокращает расходы на продвижение.</li>
+            <li>Этот домен обладает проверенной историей, сигнализируя о надёжном и устоявшемся цифровом активе.</li>
         </ul>
-        <p>Если вы заинтересованы в приобретении этого уникального домена или хотите узнать о других доступных доменах, пожалуйста, заполните форму ниже. Мы свяжемся с вами в ближайшее время для обсуждения деталей.</p>
+
+        <p><strong>count.ru</strong> – это не просто домен; это фундамент для бренда, ориентированного на точность и анализ. Не упустите эту редкую возможность стать владельцем цифровой недвижимости, которая обещает выдающуюся отдачу от инвестиций и уникальное позиционирование на рынке.</p>
+
+        <p>Готовы заявить о себе? Заполните форму запроса ниже, и мы свяжемся с вами в ближайшее время, чтобы обсудить, как <span class="domain-highlight">count.ru</span> может стать краеугольным камнем вашего следующего большого успеха!</p>
 
         <form action="https://formspree.io/f/mvgbpnpr" method="POST">
+            <!-- Скрытое поле для принудительного использования русского языка на странице подтверждения Formspree -->
+            <input type="hidden" name="_language" value="ru" />
+
             <label for="name">Ваше имя:</label>
-            <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+            <input type="text" id="name" name="name" placeholder="Введите ваше полное имя" required>
 
             <label for="email">Ваш Email (для связи):</label>
-            <input type="email" id="email" name="_replyto" placeholder="your@email.com" required>
+            <input type="email" id="email" name="_replyto" placeholder="ваш@email.com" required>
 
-            <label for="domain_of_interest">Домен(ы), которым вы интересуетесь:</label>
-            <input type="text" id="domain_of_interest" name="domain_of_interest" value="travel.fm" readonly>
-            <!-- Поле 'domain_of_interest' автоматически заполнено и только для чтения -->
-
-            <label for="price_offer">Предлагаемая цена (по желанию):</label>
-            <input type="text" id="price_offer" name="price_offer" placeholder="Например: 5000 USD">
+            <label for="domain_of_interest">Домен(ы), которыми вы интересуетесь:</label>
+            <input type="text" id="domain_of_interest" name="domain_of_interest" value="count.ru" readonly>
+            
+            <label for="price_offer">Ваше предложение (в долларах США, по желанию):</label>
+            <input type="text" id="price_offer" name="price_offer" placeholder="Например: 40000 USD или 'Сделать предложение'">
 
             <label for="message">Ваше сообщение или вопросы:</label>
-            <textarea id="message" name="message" rows="6" placeholder="Напишите ваше сообщение здесь..." required></textarea>
+            <textarea id="message" name="message" rows="6" placeholder="Напишите ваше сообщение или конкретные вопросы здесь..." required></textarea>
 
             <!-- Honeypot - невидимое поле для отлова спам-ботов. НЕ УДАЛЯЙТЕ! -->
             <input type="text" name="_gotcha" style="display:none" /> 
@@ -121,42 +237,5 @@
         </form>
     </div>
 
-    <!-- ОПЦИОНАЛЬНО: JavaScript для динамического отображения текущего домена в заголовке -->
-    <!-- Этот скрипт в данном случае менее актуален, т.к. домен "travel.fm" уже явно указан. -->
-    <!-- Однако, если вы решите использовать этот же файл для нескольких доменов, он поможет. -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const currentDomain = window.location.hostname;
-            // Проверяем, что домен не является github.io и не localhost
-            if (currentDomain && !currentDomain.includes('github.io') && currentDomain !== 'localhost' && currentDomain !== 'travel.fm') { 
-                const titleElement = document.querySelector('title');
-                if (titleElement) {
-                    titleElement.textContent = `Купить домен ${currentDomain}`;
-                }
-                const headingElement = document.querySelector('h1');
-                if (headingElement) {
-                    headingElement.innerHTML = `Домен <span style="color: #dc3545;">"${currentDomain}"</span> доступен для покупки!`;
-                }
-                const domainOfInterestField = document.getElementById('domain_of_interest');
-                if (domainOfInterestField) {
-                    domainOfInterestField.value = currentDomain; // Автоматически заполняем поле
-                }
-            } else if (currentDomain === 'travel.fm') {
-                // Убедимся, что при прямом заходе на travel.fm все корректно
-                const titleElement = document.querySelector('title');
-                if (titleElement) {
-                    titleElement.textContent = `Купить домен travel.fm`;
-                }
-                const headingElement = document.querySelector('h1');
-                if (headingElement) {
-                    headingElement.innerHTML = `Домен <span style="color: #dc3545;">"travel.fm"</span> доступен для покупки!`;
-                }
-                const domainOfInterestField = document.getElementById('domain_of_interest');
-                if (domainOfInterestField) {
-                    domainOfInterestField.value = 'travel.fm'; // Установим значение по умолчанию
-                }
-            }
-        });
-    </script>
 </body>
 </html>
